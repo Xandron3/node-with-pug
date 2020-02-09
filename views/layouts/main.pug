@@ -10,9 +10,9 @@ block body
       a.navbar-logo(href="/") Xandron3
       ul.navbar-menu.navbar_menu
         li.navbar_menu-item.menu_item
-          a.menu_item-link(href="/", class=path === '/' && "active") Home
+          a(href="/", class=path === '/' ? "menu_item-link menu_item-link--active" : "menu_item-link") Home
         li.navbar_menu-item.menu_item
-          a.menu_item-link(href="/about",  class=path === '/about' && "active") About
+          a(href="/about",  class=path === '/about' ? "menu_item-link menu_item-link--active" : "menu_item-link") About
 
 block main
   .wrapper

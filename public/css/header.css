@@ -38,6 +38,6 @@
 }
 
 .menu_item-link:hover,
-.menu_item-link.active {
+.menu_item-link--active {
   color: #5bbafb;
 }
