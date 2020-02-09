@@ -1,0 +1,23 @@
+extends ./app
+
+block mainStyles
+  link(rel="stylesheet", href="/css/header.css")
+  block styles
+
+block body
+  nav.navbar
+    .wrapper.navbar-wrapper
+      a.navbar-logo(href="/") Xandron3
+      ul.navbar-menu.navbar_menu
+        li.navbar_menu-item.menu_item
+          a.menu_item-link(href="/", class=path === '/' && "active") Home
+        li.navbar_menu-item.menu_item
+          a.menu_item-link(href="/about",  class=path === '/about' && "active") About
+
+block main
+  .wrapper
+    .card
+      .card-header.card_header
+        span.card_header-title #{cardTitle}
+      .card-body
+        block content

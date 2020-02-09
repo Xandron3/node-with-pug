@@ -1,0 +1,43 @@
+.navbar {
+  min-height: 64px;
+  max-height: 64px;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #0044c6;
+}
+
+.navbar-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  margin-right: 32px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navbar-menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar_menu-item {
+  list-style-type: none;
+  padding: 0 15px;
+}
+
+.menu_item-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.menu_item-link:hover,
+.menu_item-link.active {
+  color: #5bbafb;
+}

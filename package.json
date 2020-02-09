@@ -1,0 +1,19 @@
+{
+  "name": "node-with-pug",
+  "version": "0.0.1",
+  "main": "app.js",
+  "repository": "https://github.com/Xandron3/node-with-pug.git",
+  "author": "Andrei Kandratovich <andrekon106@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

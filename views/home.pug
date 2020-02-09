@@ -1,0 +1,14 @@
+extends ./layouts/main
+
+block styles
+  link(rel="stylesheet", href="/css/home.css")
+
+block content
+  if todoList.length > 0
+    ul.todo_list
+      each todo in todoList
+        li.todo_list-item.todo_item
+          input.todo_item-checkbox(type="checkbox", name=todo.id, checked=todo.completed, disabled)
+          span(class=todo.completed ? "todo_item-title todo_item-title--completed" : "todo_item-title") #{todo.title}
+  else
+    h3 No todo items
